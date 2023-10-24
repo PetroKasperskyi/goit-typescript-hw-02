@@ -14,11 +14,12 @@ enum Week {
 };
 
 function isWeekend(day: string): boolean {
-  if (day === Week.Saturday || Week.Sunday) {
-    console.log("${day} is weekend day");
+  if (day === Week.Saturday ||
+  day === Week.Sunday ) {
+    console.log(`${day} is weekend day`);
     return true;
   } else {
-    console.log("${day} isn't weekend day");
+    console.log(`${day} isn't weekend day`);
     return false;
   }
 }
